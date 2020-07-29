@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reco</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <script type="text/javascript" src="xlsx.full.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+        GST Reco tool
+    </header>
+<div class="content">
+    <div style="display: flex;">
+<div class="left">
+    <div>
+        <p>Select File</p>
+    </div>
+    <div><label>GST</label>
+        <input type="file" id="fileUpload_gst" accept=".xls,.xlsx" /><br /></div>
+    <div>
+        <label>Books</label>
+        <input type="file" id="fileUpload_books" accept=".xls,.xlsx" /><br />
+    </div>
+    <div>
+        <button type="button" id="compare" class="btn btn-primary">Preview</button>
+    </div>
+</div>
+<div class="right" id="list-cnt">
+    GST reconciliation
+    Featured snippet from the web
+    Under Goods and Services Tax (GST), reconciliation means recording every transaction that took place during a period while also ensuring that the data filed by the supplier matches with those of the recipients. This enables one to make sure that no sales or purchases are missing or wrongly reported in the GST returns.
+</div>
+</div>
+<div class="table-container" id="table-container">
+</div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
